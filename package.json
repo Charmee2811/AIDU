@@ -1,0 +1,29 @@
+{
+  "name": "framework",
+  "dependencies": {
+    "delete": "^1.0.1",
+    "fs-extra": "^4.0.1",
+    "jasmine-allure-reporter": "^1.0.2",
+    "jasmine-data-provider": "^2.2.0",
+    "jasmine-reporters": "^2.2.1",
+    "nodemailer": "^4.0.1",
+    "protractor": "^5.3.0",
+    "protractor-beautiful-reporter": "^1.2.6",
+    "protractor-flake": "^4.0.0",
+    "protractor-jasmine2-parallel-html-reporter": "^1.0.0",
+    "protractor-react-selector": "^2.2.4",
+    "protractor-retry": "^1.2.6",
+    "protractor-testability-plugin": "^2.0.1",
+    "selenium-webdriver": "^4.0.0-alpha.7",
+    "winston": "^2.3.1",
+    "xlsx": "^0.10.3",
+    "zip-folder": "^1.0.0"
+  },
+  "scripts": {
+    "webdriver-update": "./node_modules/.bin/webdriver-manager update",
+    "webdriver-start": "./node_modules/.bin/webdriver-manager start",
+    "start": "npm run webdriver-update &&npm run webdriver-start",
+    "protractor": "./node_modules/.bin/protractor src/config/conf.js",
+    "reports": "allure generate allure-results --clean -c allure-report ||true"
+  }
+}

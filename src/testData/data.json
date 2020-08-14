@@ -1,0 +1,14 @@
+{
+  "configData": {
+    "baseUrl": "https://www.ab-in-den-urlaub.de/",
+    "title": "Urlaub jetzt mit bis zu 50% Rabatt bei ab in den urlaub"
+  },
+  "searchPage": {
+    "destination": "Austria"
+  },
+  "bookPage":
+  {
+    "firstName": "travelTainment"
+  }
+}
+
