@@ -1,7 +1,9 @@
 {
   "configData": {
     "baseUrl": "https://www.ab-in-den-urlaub.de/",
-    "title": "Urlaub jetzt mit bis zu 50% Rabatt bei ab in den urlaub"
+    "baseUrl_np": "https://search.travel-test.invia.lan/",
+    "title": "Urlaub jetzt mit bis zu 50% Rabatt bei ab in den urlaub",
+    "title_np": "Urlaub: Bis 40% Rabatt beim Marktführer | ab-in-den-urlaub.de"
   },
   "searchPage": {
     "destination": "Austria"

@@ -6,7 +6,7 @@ var objCommonFun = require("./../util/common.js");
 var objData = require("./../testData/data.json");
 //var objcommon = require ("./../util/common.js");
 
-var pg_ts1 = function()
+var pg_oldPlatform = function()
 {
 
 //locators
@@ -23,11 +23,12 @@ var pg_ts1 = function()
     //(".button-next.link span[class = 'icon-arrow-right']"));
    // (element(by.linkText("Zur Buchung"))
     var txt_firstName = element(by.css("input[id =customerFirstName]"));
-
+    var txt_selectTraveller = element(by.css("input[id =travellerSummary]"));
+    var btn_adultPlus = element(by.css(".adult .plusButton"));
+    var btn_childPlus = element(by.css(".child .plusButton"));
     //#ownarrival .aiduac-group.hotel [data-type=hotel][data-value='56050;4'] //
-
-    var EC = protractor.ExpectedConditions;
-
+    var btn_submitTraveller = element(by.css(".submit .button-submit"));
+    okay
 
     this.submitForm1 = function()
     {
@@ -43,6 +44,10 @@ var pg_ts1 = function()
                  //browser.wait(EC.visibilityOf(link_hotelSelect),15000);
                  //link_hotelSelect.click();
                  browser.actions().sendKeys(protractor.Key.ENTER).perform();
+                 txt_selectTraveller.click();
+                 btn_adultPlus.click();
+                 btn_childPlus.click();
+                 btn_submitTraveller.click();
 
                  browser.actions().mouseMove(btn_submit).click().perform().then(function()
                  {
@@ -87,4 +92,4 @@ var pg_ts1 = function()
 
 } ;
 
-module.exports = new pg_ts1();
+module.exports = new pg_oldPlatform();

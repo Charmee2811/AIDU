@@ -1,5 +1,5 @@
 var objLoadUrlpg = require ('./../pages/loadUrl.js');
-var objTs1Pg = require ('./../pages/pg_ts1.js');
+var objTs1Pg = require ('../pages/pg_oldPlatform.js');
 
 //Managing logs
 var logger = require('./../util/logger.js');
