@@ -5,6 +5,7 @@ var objCommonFun = require("./../util/common.js");
 //config data and other files
 var objData = require("./../testData/data.json");
 //var objcommon = require ("./../util/common.js");
+var EC = protractor.ExpectedConditions;
 
 var pg_oldPlatform = function()
 {
@@ -28,7 +29,7 @@ var pg_oldPlatform = function()
     var btn_childPlus = element(by.css(".child .plusButton"));
     //#ownarrival .aiduac-group.hotel [data-type=hotel][data-value='56050;4'] //
     var btn_submitTraveller = element(by.css(".submit .button-submit"));
-    okay
+
 
     this.submitForm1 = function()
     {

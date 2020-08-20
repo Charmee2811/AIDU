@@ -25,7 +25,7 @@ exports.config = {
     "maxSessions": 1, //this will force protractor to execute in sequence (if we execute in parllel reports/screenshots wont be proper).
 
     // specs: ['./../spec/tsHome.js','./../test/tsShop.js'],
-    "specs": ['./../spec/ts_oldPlatform.js'],
+    "specs": ['./../spec/ts_newPlatform.js'],
    // SELENIUM_PROMISE_MANAGER: false,
 
     "capabilities": { //to execute on single browser
